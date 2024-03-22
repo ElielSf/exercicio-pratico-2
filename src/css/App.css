@@ -1,0 +1,28 @@
+.container {
+}
+
+.container__containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 5fr;
+  grid-template-areas: 
+  "titulo titulo"
+  "concluidas adicionar"
+  "atuais atuais";
+}
+
+.container__containerGrid__title {
+  grid-area: titulo;
+}
+
+.container__containerGrid__tarefasConcluidas {
+  grid-area: concluidas;
+}
+
+.container__containerGrid__adicionarTarefas {
+  grid-area: adicionar;
+}
+
+.container__containerGrid__tarefasCriadas {
+  grid-area: atuais;
+}
