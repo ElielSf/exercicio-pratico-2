@@ -1,9 +1,14 @@
+import '../css/NovaTarefa.css'
 
-
-export default function NovaTarefa() {
+export default function NovaTarefa({ qtdTarefa }) {
+    const listaTarefas = qtdTarefa.map(item => 
+        <li key={numero}>
+            {item}
+        </li>
+    );
     return (
-        <div>
-            <p>adsa</p>
+        <div className='container'>
+            
         </div>
     )
 }
