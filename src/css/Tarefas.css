@@ -1,0 +1,47 @@
+.container-tasks {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "total tarefas"
+    "adicionar tarefas"
+}
+
+.container-tasks__wrapperCriar, .container-tasks__wrapperTotal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 1px;
+}
+
+.container-tasks__wrapperCriar {
+    grid-area: adicionar;
+}
+
+.container-tasks__wrapperTotal {
+    grid-area: total;
+}
+
+.container-tasks__wrapperItems {
+    grid-area: tarefas;
+    flex-wrap: wrap;
+    border-left: solid 1px;
+}
+
+.wrapper__input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: solid 1px 1px 1px 1px;
+}
+
+.wrapper__items {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
