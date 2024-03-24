@@ -1,7 +1,7 @@
 import './css/App.css'
 import Tarefa from './components/Tarefa.jsx'
 import AdicionarTarefa from './components/AdicionarTarefa.jsx'
-import TarefasConcluidas from './components/TarefasConcluidas.jsx'
+import NovaTarefa from './components/NovaTarefa.jsx'
 
 export default function App() {
 
@@ -12,7 +12,7 @@ export default function App() {
           <h1>Lista de Atividades</h1>
         </div>
         <div className='container__containerGrid__tarefasConcluidas'>
-          <TarefasConcluidas 
+          <NovaTarefa 
             numeroTarefas=''
           />
         </div>
