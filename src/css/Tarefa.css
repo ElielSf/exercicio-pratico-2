@@ -1,0 +1,39 @@
+.containerTarefa {
+    width: 40%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.containerTarefa__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    font-size: 0.85em;
+    padding: 10px;
+}
+
+.containerTarefa__botao {
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+
+    font-size: 1.25rem;
+    color: black;
+    background-color: rgb(152, 255, 152);
+}
+
+.containerTarefa__botao:hover {
+    background-color: rgb(29, 255, 29);
+    transition: 0.5s;
+}
+
+.containerTarefa, .containerTarefa__item {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}

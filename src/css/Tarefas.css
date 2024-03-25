@@ -21,6 +21,7 @@
 
 .container-tasks__wrapperCriar {
     grid-area: adicionar;
+    border-top: solid 1px;
 }
 
 .container-tasks__wrapperTotal {
@@ -29,6 +30,7 @@
 
 .container-tasks__wrapperItems {
     grid-area: tarefas;
+    display: flex;
     flex-wrap: wrap;
     border-left: solid 1px;
 }
@@ -41,7 +43,8 @@
 }
 
 .wrapper__items {
-    margin-left: 50px;
-    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
     font-size: 1.5em;
 }
