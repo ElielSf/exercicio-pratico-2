@@ -16,8 +16,8 @@ export default function Tarefas() {
             if (textTarefa !== '') {
                 setTarefas([...Tarefas,{ text: textTarefa, date: dataFormatada }]);
                 setTotal((total) => total += 1);
-                if (dataFormatada < dataAtual) {
-                    
+                if (dataFormatada == dataAtual) {
+                    console.log('ae');
                 }
                 setTextTarefa('');
                 setDateTarefa('');
@@ -49,7 +49,3 @@ export default function Tarefas() {
         </div>
     )
 }
-
-/*<li key={index}>Tarefa: {tarefa.text} <br/>
-                    Data: {tarefa.date} <br/>
-                    Data Atual: {dataAtual}</li>)}*/
